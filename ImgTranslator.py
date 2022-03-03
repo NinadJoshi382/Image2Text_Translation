@@ -5,7 +5,7 @@ import pytesseract
 from deep_translator import GoogleTranslator, single_detection
 import googletrans 
 Akey ='generate your key on https://detectlanguage.com/users/sign_in'
-pytesseract.pytesseract.tesseract_cmd = 'C:\\Program Files\\Tesseract-OCR\\tesseract.exe' #file that contains already trained Data set of diff fonts of texts.
+pytesseract.pytesseract.tesseract_cmd = 'your path to tesseract.exe on your system' #file that contains already trained Data set of diff fonts of texts.
 img = cv.imread('your image',cv.IMREAD_GRAYSCALE)#grey scale img read (cv.IMREAD_GRAYSCALE)
 x,th1 = cv.threshold(img,127,255,cv.THRESH_BINARY)#so that non white color texts can also be detected by pytesseract
 #to detect text from the image
